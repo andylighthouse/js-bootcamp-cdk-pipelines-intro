@@ -5,7 +5,9 @@ import { CdkpipelinesDemoPipelineStack } from "../lib/cdkpipelines-demo-pipeline
 const app = new App();
 
 new CdkpipelinesDemoPipelineStack(app, "CdkpipelinesDemoPipelineStack", {
-  env: { account: "ACCOUNT", region: "us-east-1" },
+  env: { account: "037628486752", region: "us-east-1" },
 });
 
 app.synth();
+
+// aws secretsmanager create-secret --region us-east-1 --name github-token --secret-string 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
